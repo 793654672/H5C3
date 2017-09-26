@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .header{
+        width: 100%;
+        height: 100px;
+        border-bottom: 1px solid blue;
+
+    }
+    .one{
+        width: 190px;
+        height: 55px;
+        background:url("images/global.png");
+        background-position:0 0  ;
+        position:absolute ;
+        top: 20px;
+        left: 60px;
+        cursor: pointer;
+    }
+    .two{
+        width: 305px;
+        height: 95px;
+        position:relative;
+        /*border: 1px solid red;*/
+        top: 0;
+        left: 40%;
+    }
+    .two .a{
+        width: 93px;
+        height: 95px;
+        position: absolute;
+        background: url("images/global.png");
+        background-position: -277px -115px;
+        float: left;
+
+    }
+    .two .b{
+        width: 93px;
+        height: 95px;
+        position: absolute;
+        background: url("images/global.png");
+        background-position: 21px -401px;
+        left:67px;
+    }
+    .two .c{
+        width: 93px;
+        height: 95px;
+        position: absolute;
+        background: url("images/global.png");
+        background-position: 39px -306px;
+        left: 125px;
+    }
+    .two .d{
+        width: 93px;
+        height: 95px;
+        position: absolute;
+        background: url("images/global.png");
+        background-position: 1px -210px;
+        left: 225px;
+    }
+    .three{
+        width: 100px;
+        height: 34px;
+        background: url("images/global.png");
+        background-position: 0 -56px;
+        position: absolute;
+        right: 50px;
+        top: 35px;
+        cursor: pointer;
+    }
+    .content{
+        width: 1560px;
+        height: 600px;
+        /*border: 1px solid red;*/
+        /*position: absolute;*/
+        margin: 0 auto;
+    }
+    .word{
+        width: 260px;
+        height: 150px;
+        /*border: 1px solid red;*/
+        position: relative;
+        top: 250px;
+        left: 315px;
+    }
+    .word h1{
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        top:-44px;
+    }
+    .word h3{
+        position: absolute;
+        /*text-align: center;*/
+        font-size: 20px;
+        top: 54px;
+        color: grey;
+    }
+    .rocket{
+        width: 238px;
+        height: 231px;
+        background: url("images/page.png");
+        background-position: 250px 11px;
+        position: relative;
+        left:1000px;
+        animation: dou .4s ease 0s infinite;
+    }
+    .rocket:hover{
+        transform:translate3d(100px,200px,300px);
+    }
+    @-webkit-keyframes dou {
+        0%{transform: translate3d(0px,0px,0px)}
+        /*25%{transform: translate3d(-5px,-5px,-5px)}*/
+        50%{transform: translate3d(15px,15px,15px)}
+        /*75%{transform: translate3d(5px,5px,5px)}*/
+        100%{transform: translate3d(0px,0px,0px)}
+    }
+    .xian{
+        width: 850px;
+        height: 600px;
+        /*border: 1px solid red;*/
+        overflow: hidden;
+        position: absolute;
+        top: 10px;
+        left: 700px;
+    }
+    .xian .a1{
+        width: 156px;
+        height: 153px;
+        background: url('../images/page.png');
+        background-position: -239px -220px;
+        position: relative;
+        top: 195px;
+        left: 348px;
+        animation: flya 1s ease 0s infinite;
+    }
+    @-webkit-keyframes flya {
+        from{transform: translate3d(800px,-800px,0)}
+        to{transform: translate3d(-800px,800px,0)}
+    }
+    .xian .a2{
+        width: 156px;
+        height: 153px;
+        background: url('../images/page.png');
+        background-position: -223px -234px;
+        position: relative;
+        top: 40px;
+        left: 600px;
+        animation: flyb 2s ease 0s infinite;
+    }
+
+    @-webkit-keyframes flyb {
+        from{transform: translate3d(800px,-800px,0)}
+        to{transform: translate3d(-800px,800px,0)}
+    }
+    .xian .a3{
+        width: 156px;
+        height: 153px;
+        background: url('../images/page.png');
+        background-position: -146px -234px;
+        position: relative;
+        top: -108px;
+        left: 400px;
+        animation: flyc 3s ease 0s infinite;
+    }
+
+    @-webkit-keyframes flyc {
+        from{transform: translate3d(800px,-800px,0)}
+        to{transform: translate3d(-800px,800px,0)}
+    }
+    .xian .a4{
+        width: 156px;
+        height: 153px;
+        background: url('../images/page.png');
+        background-position: -146px -234px;
+        position: relative;
+        top: -184px;
+        left: 98px;
+        animation: flyd 2s ease 0s infinite;
+    }
+
+    @-webkit-keyframes flyd {
+        from{transform: translate3d(700px,-700px,0)}
+        to{transform: translate3d(-700px,700px,0)}
+    }
+
+</style>
+<body>
+<div class="header">
+    <div class="one"></div>
+    <div class="two">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+    <div class="three"></div>
+</div>
+<div class="content">
+    <div class="word">
+        <h1>极速体验</h1>
+        <h3>智能引擎,输入顺滑流畅,让您体验如飞一般的感觉.</h3>
+    </div>
+    <div class="rocket"></div>
+    <div class="xian">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+    </div>
+    <div class="download"></div>
+</div>
+</body>
+</html>

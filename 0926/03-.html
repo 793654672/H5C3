@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            perspective: 800px;
+            margin: 100px auto;
+
+        }
+        .unit{
+            width: 300px;
+            height: 300px;
+            position: relative;
+
+        }
+        .container .unit img{
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+        }
+        /*前*/
+        .unit img.first{
+            transform: translateZ(150px);
+        }
+        /**/
+        /*上*/
+        .unit img.second{
+            transform: rotateX(90deg) translateZ(150px);
+            /*z-index: 2;*/
+        }
+
+        .unit img.three{
+            transform:rotateY(90deg) translateZ(150px);
+        }
+
+        .unit img.four{
+            transform:rotateY(90deg) translateZ(-150px);
+        }
+
+        .unit img.five{
+            transform:rotateX(90deg) translateZ(-150px);
+        }
+        /*后*/
+        .unit img.six{
+            transform: translateZ(-150px);
+        }
+        .unit{
+            transform-style:preserve-3d ;
+            /*transform: rotateX(0deg);*/
+            transition: all 5s ease 0s ;
+        }
+        .container:hover .unit{
+            /*transform: rotateX(360deg) rotateY(360deg);*/
+            /*transform: rotateX(360deg);*/
+            /*transform: rotateY(360deg) ;*/
+            /*transform: rotateZ(360deg) ;*/
+            transform: rotateY(360deg) rotateX(720deg) translate(90px);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="unit">
+        <img class="first"  src="../images/a5.jpg" alt="">
+        <img class="second" src="../images/a3.jpg" alt="">
+        <img class="three" src="../images/a2.jpg" alt="">
+        <img class="four" src="../images/a2.jpg" alt="">
+        <img class="five" src="../images/a2.jpg" alt="">
+        <img class="six" src="../images/a2.jpg" alt="">
+    </div>
+</div>
+<!--
+绝对:absolute
+相对:relative
+-->
+</body>
+</html>
